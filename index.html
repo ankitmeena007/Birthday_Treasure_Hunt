@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="mainHeading">Today's your Birthday! Where has “Time” gone?</h1>
+        <div class="input-section">
+            <input type="text" id="userInput" placeholder="Enter Code...">
+            <button id="goButton">Go</button>
+        </div>
+    </div>
+
+     <!--Canvas Confetti Script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script>
+        // Function to start confetti on page load
+        window.onload = function() {
+            // Configure the confetti animation
+            const confettiSettings = {
+                angle: 90,
+                spread: 45,
+                startVelocity: 30,
+                elementCount: 10,
+                dragFriction: 0.05,
+                duration: 3000,
+                delay: 0,
+                colors: ['#ff0000', '#ff7300', '#fffb00', '#00ff00', '#00aaff', '#6200ea']
+            };
+            // Trigger the confetti animation
+            confetti(confettiSettings);
+        };
+
+        // Event listener for the button
+        document.getElementById('goButton').addEventListener('click', function() {
+            var userInput = document.getElementById('userInput').value;
+            var mainHeading = document.getElementById('mainHeading');
+
+            if (userInput === '4861') {
+                mainHeading.innerText = 'Oh Priyosha, You are so special to us! You\'re a true "Brother"';
+                document.body.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ5rp-RjR9zAo4cCyBJJGGM4PZqd28fwbNbA&s')";
+
+            } 
+            
+            
+            
+            else if (userInput === '7070') {
+                mainHeading.innerText = 'you’re quite good at this. oh hoy!, Your next clue is with Leo Tolstoy';
+                document.body.style.backgroundImage = "url('https://wallpapers.com/images/high/old-books-on-the-shelve-j0p8ez7dbfhlxcaa.webp')";
+                } 
+            
+            
+            else if (userInput === '7920') {
+                mainHeading.innerText = 'Oh me! oh my! you’re getting closer. Your next clue is near the mirror"';
+                document.body.style.backgroundImage = "url('https://wallpapers.com/images/high/mirror-background-wffw5rnikxdi69zo.webp')";
+                } 
+            
+            else if (userInput === '4269') {
+                mainHeading.innerText = 'christmas ke pehle aata hai halloween, your next clue is inside a balloon"';
+                document.body.style.backgroundImage = "url('https://wallpapers.com/images/high/three-cluster-balloons-in-sky-zqp6xmfw5j2ygtmj.webp')";
+                } 
+                
+            else if (userInput === '7274') {
+                mainHeading.innerText = 'Next, go to the place where meals are made, where delicious delights are carefully laid.';
+                document.body.style.backgroundImage = "url('https://wallpapers.com/images/hd/food-furniture-style-interior-nwyldv9op7ru6ugr.webp')";
+                } 
+                
+            else if (userInput === '6864') {
+                mainHeading.innerText = 'For your next hint, venture outside, Check by the garden, where flowers bloom bright';
+                document.body.style.backgroundImage = "url('https://wallpapers.com/images/high/garden-flower-pot-png-06122024-6rsdc0slhe80glvr.png')";
+                } 
+                
+            else if (userInput === '6179') {
+                mainHeading.innerText = 'You’ve searched around, now it’s that hour, Find the last clue near the youngest member of the house';
+                document.body.style.backgroundImage = "url('https://wallpapers.com/images/high/top-secret-stamp-graphic-opkypmf9fj0trkxh.webp')";
+                } 
+        });
+    </script>
+</body>
+</html>

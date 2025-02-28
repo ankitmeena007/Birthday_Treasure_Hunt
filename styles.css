@@ -1,0 +1,67 @@
+/* Body and page background setup */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapers.com/images/high/paper-flowers-and-butterflies-pastel-desktop-spso2s154184w7ig.webp');
+    background-size: cover; /* Ensures the image covers the whole background */
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container for centering content */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 600px;
+}
+
+/* Heading style */
+h1 {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Input section style */
+.input-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Input field style */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 60%;
+    outline: none;
+}
+
+/* Go button style */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover 
